@@ -32,32 +32,34 @@ class _SplashscreenState extends State<Splashscreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.blue[700],
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Padding(
-            padding: const EdgeInsets.all(20.0),
-            child: Image.asset(
-              'images/logo1.png',
-              fit: BoxFit.cover,
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Image.asset(
+                'images/logo1.png',
+                fit: BoxFit.cover,
+              ),
             ),
-          ),
-          SizedBox(
-            height: 20,
-          ),
-          AnimatedTextKit(
-            animatedTexts: [
+            SizedBox(
+              height: 20,
+            ),
+            AnimatedTextKit(
+              animatedTexts: [
 
-              WavyAnimatedText('SEE THE WORLD',
-                  textStyle: TextStyle(color: Colors.white70),speed:Duration(milliseconds: 260),),
-            ],
-            isRepeatingAnimation: true,
-          ),
-          SizedBox(
-            height: 20,
-          ),
-        ],
+                WavyAnimatedText('SEE THE WORLD',
+                    textStyle: TextStyle(color: Colors.white70),speed:Duration(milliseconds: 260),),
+              ],
+              isRepeatingAnimation: true,
+            ),
+            SizedBox(
+              height: 20,
+            ),
+          ],
+        ),
       ),
     );
   }

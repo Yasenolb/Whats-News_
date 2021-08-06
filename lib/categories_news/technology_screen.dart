@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled6/Bloc/cubite.dart';
 import 'package:untitled6/Bloc/state_bloc.dart';
+import 'package:untitled6/categories_news/search_screen.dart';
 import 'package:untitled6/const/const.dart';
 import 'package:untitled6/shange_lang/lang_cubit.dart';
 
@@ -13,6 +14,17 @@ class TechnologyScreen extends StatelessWidget {
       appBar: AppBar(
         title:
             Text(ModCubit2.get(context).isArabic ? 'تكنلوجيا' : 'Technology'),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.search,
+                size: 25,
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SearchScreen()));
+              }),
+        ],
       ),
       body: BlocConsumer<NewsCubit, NewsStates2>(
           listener: (context, state) {},

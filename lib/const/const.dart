@@ -10,12 +10,14 @@ import 'package:untitled6/categories_news/web_sacreen.dart';
 import 'package:untitled6/shange_lang/lang_cubit.dart';
 import 'dart:io' show Platform;
 
-
 Widget buildItem(article, context) => Padding(
-      padding: const EdgeInsets.all(18.0),
+      padding: const EdgeInsets.all(16.0),
       child: InkWell(
         onTap: () {
           showAnimatedDialog(
+            animationType: DialogTransitionType.size,
+            curve: Curves.fastOutSlowIn,
+            duration: Duration(milliseconds: 500),
             context: context,
             barrierDismissible: true,
             builder: (BuildContext context) {
@@ -23,25 +25,22 @@ Widget buildItem(article, context) => Padding(
                 positiveTextStyle: TextStyle(fontSize: 30),
                 contentText: '${article['title']}',
                 actions: [
-
-if ((defaultTargetPlatform == TargetPlatform.iOS) || (defaultTargetPlatform == TargetPlatform.android))
-             TextButton(
-
-    onPressed: () {
-      Navigator.push(context, MaterialPageRoute(builder: (context) =>
-          WebViewScreen(article['url'])));
-    },
-    child: Text(
-      ModCubit2
-          .get(context)
-          .isArabic ? 'عرض الخبر' : 'View news',
-    ),
-  ),
-
-
-
-
-
+                  if ((defaultTargetPlatform == TargetPlatform.iOS) ||
+                      (defaultTargetPlatform == TargetPlatform.android))
+                    TextButton(
+                      onPressed: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) =>
+                                    WebViewScreen(article['url'])));
+                      },
+                      child: Text(
+                        ModCubit2.get(context).isArabic
+                            ? 'عرض الخبر'
+                            : 'View news',
+                      ),
+                    ),
                   TextButton(
                     onPressed: () {
                       Navigator.pop(context);

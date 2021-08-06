@@ -156,40 +156,37 @@ class _OnBoardingScreenState extends State<OnBoardingScreen> {
   }
 }
 
-Widget builderBoardingItem(ModelView modelView) => Padding(
-      padding: const EdgeInsets.only(bottom: 80),
-      child: Column(
-        // crossAxisAlignment: CrossAxisAlignment.center,
+Widget builderBoardingItem(ModelView modelView) =>
+    Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+        Image.asset(
+          '${modelView.image}',
+          width: 110,
+          fit: BoxFit.contain,
+        ),
+        SizedBox(
+          height: 18,
+        ),
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
 
-        mainAxisAlignment: MainAxisAlignment.center,
+            Text(
+              '${modelView.title}',
+              style: TextStyle(fontSize: 20.0, color: Colors.white),
 
-        crossAxisAlignment: CrossAxisAlignment.center,
-
-        children: [
-          Image.asset(
-            '${modelView.image}',
-            width: 110,
-            fit: BoxFit.contain,
-          ),
-          SizedBox(
-            height: 30,
-          ),
-          Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-            children: [
-              Text(
-                '${modelView.title}',
-                style: TextStyle(fontSize: 22.0, color: Colors.white),
-              ),
-              SizedBox(
-                height: 16,
-              ),
-              Text(
-                '${modelView.body}',
-                style: TextStyle(fontSize: 14.0, color: Colors.white),
-              ),
-            ],
-          ),
-        ],
-      ),
+            ),
+            SizedBox(
+              height: 16,
+            ),
+            Text(
+              '${modelView.body}',
+              style: TextStyle(fontSize: 14.0, color: Colors.white),
+            ),
+          ],
+        ),
+      ],
     );

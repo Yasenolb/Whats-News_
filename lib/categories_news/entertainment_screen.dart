@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:untitled6/Bloc/cubite.dart';
 import 'package:untitled6/Bloc/state_bloc.dart';
+import 'package:untitled6/categories_news/search_screen.dart';
 import 'package:untitled6/const/const.dart';
 import 'package:conditional_builder/conditional_builder.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -11,7 +12,19 @@ class EntertainmentScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(ModCubit2.get(context).isArabic ? 'ترفيه' : 'Entertainment'),
+        title:
+            Text(ModCubit2.get(context).isArabic ? 'ترفيه' : 'Entertainment'),
+        actions: [
+          IconButton(
+              icon: Icon(
+                Icons.search,
+                size: 25,
+              ),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SearchScreen()));
+              }),
+        ],
       ),
       body: BlocConsumer<NewsCubit, NewsStates2>(
           listener: (context, state) {},
@@ -19,23 +32,19 @@ class EntertainmentScreen extends StatelessWidget {
             var list = NewsCubit.get(context).entertainmentData;
             var listA = NewsCubit.get(context).entertainmentDataA;
             return ConditionalBuilder(
-              condition:
-              ModCubit2.get(context).isArabic?
-              list.length > 0:
-              listA.length>0,
+              condition: ModCubit2.get(context).isArabic
+                  ? list.length > 0
+                  : listA.length > 0,
               fallback: (context) => Center(child: CircularProgressIndicator()),
               builder: (context) => ListView.separated(
                   itemBuilder: (context, index) =>
-                  ModCubit2.get(context).isArabic?
-                      buildItem(list[index], context):
-                  buildItem(listA[index], context)
-                  ,
+                      ModCubit2.get(context).isArabic
+                          ? buildItem(list[index], context)
+                          : buildItem(listA[index], context),
                   separatorBuilder: (context, index) => Divider(),
-                  itemCount:
-                  ModCubit2.get(context).isArabic?
-                  list.length:
-                  listA.length
-              ),
+                  itemCount: ModCubit2.get(context).isArabic
+                      ? list.length
+                      : listA.length),
             );
           }),
     );

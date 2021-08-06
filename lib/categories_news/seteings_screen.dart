@@ -6,6 +6,7 @@ import 'package:untitled6/Bloc/cubite.dart';
 import 'package:untitled6/Dark_Mode/cubite_mode.dart';
 import 'package:untitled6/Home_layout.dart';
 import 'package:untitled6/shange_lang/lang_cubit.dart';
+import 'package:untitled6/start_screens/sing_up_screen/sing_up_screen.dart';
 import 'package:untitled6/start_screens/welcome_screen/welcome-screen.dart';
 
 // ignore: unused_element
@@ -33,6 +34,7 @@ class _SettingsState extends State<Settings> {
     var listHealthA = NewsCubit.get(context).healthDataA;
     return Scaffold(
         appBar: AppBar(
+          titleSpacing: 0,
           title: Text(
             ModCubit2.get(context).isArabic ? 'الاعدادات' : 'Settings',
           ),
@@ -44,7 +46,7 @@ class _SettingsState extends State<Settings> {
                 padding: const EdgeInsets.all(16.0),
                 child: Container(
                     margin: EdgeInsets.only(bottom: 10),
-                    height: 200,
+                    height: 170,
                     width: double.infinity,
                     decoration: BoxDecoration(
                         shape: BoxShape.circle,
@@ -131,6 +133,9 @@ class _SettingsState extends State<Settings> {
               InkWell(
                 onTap: () {
                   showAnimatedDialog(
+                    animationType: DialogTransitionType.size,
+                    curve: Curves.fastOutSlowIn,
+                    duration: Duration(milliseconds: 500),
                     context: context,
                     barrierDismissible: true,
                     builder: (BuildContext context) {
@@ -178,6 +183,9 @@ class _SettingsState extends State<Settings> {
               InkWell(
                 onTap: () {
                   showAnimatedDialog(
+                    animationType: DialogTransitionType.size,
+                    curve: Curves.fastOutSlowIn,
+                    duration: Duration(milliseconds: 500),
                     context: context,
                     barrierDismissible: true,
                     builder: (BuildContext context) {
@@ -192,11 +200,17 @@ class _SettingsState extends State<Settings> {
                         actions: [
                           TextButton(
                               onPressed: () {
+                                // ignore: unnecessary_statements
+
                                 Navigator.pushAndRemoveUntil(
                                     context,
                                     MaterialPageRoute(
                                         builder: (context) => WelcomeScreen()),
                                     (route) => false);
+                                setState(() {
+                                  // ignore: unnecessary_statements
+                                  cc != null;
+                                });
                               },
                               child: Text(ModCubit2.get(context).isArabic
                                   ? 'نعم'

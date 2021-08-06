@@ -13,33 +13,28 @@
 //   return name;
 // }
 
-
-
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:untitled6/sherd_page/page_sherd.dart';
 import 'package:untitled6/sherd_page/page_state.dart';
 
-var isLog=true;
-
+var isLog = true;
 
 class ModCubit3 extends Cubit<ModStates3> {
   ModCubit3() : super(ModInitialStates3());
 
   static ModCubit3 get(context) => BlocProvider.of(context);
 
-  var isLog=true;
+  var isLog = true;
 
-void changPage({bool shard3}) {
-
-
-  if (shard3 != null) {
-    isLog = shard3;
-    emit(NewsChangeModeStates3());
-  }
-  else {
-    isLog = !isLog;
-    CacheHelper3.putData3('isLog', isLog).then((value) {
+  void changPage({bool shard3}) {
+    if (shard3 != null) {
+      isLog = shard3;
       emit(NewsChangeModeStates3());
-    });
+    } else {
+      isLog = !isLog;
+      CacheHelper3.putData3('isLog', isLog).then((value) {
+        emit(NewsChangeModeStates3());
+      });
+    }
   }
-}}
+}

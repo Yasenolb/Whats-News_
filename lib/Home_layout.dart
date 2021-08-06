@@ -341,24 +341,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'اعمال'
-                                          : 'Business',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'اعمال'
+                                        : 'Business',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
@@ -399,24 +396,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'رياضة'
-                                          : 'Sports',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'رياضة'
+                                        : 'Sports',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
@@ -459,24 +453,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'علوم'
-                                          : 'Science',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'علوم'
+                                        : 'Science',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
@@ -519,24 +510,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'ترفيه'
-                                          : 'Entertainment',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'ترفيه'
+                                        : 'Entertainment',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
@@ -579,24 +567,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'تكنلوجيا'
-                                          : 'Technology',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'تكنلوجيا'
+                                        : 'Technology',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
@@ -639,24 +624,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'صحة'
-                                          : 'Health',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'صحة'
+                                        : 'Health',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
@@ -698,24 +680,21 @@ class HomeLayoutState extends State<HomeLayout> {
                           Expanded(
                             child: Container(
                               height: 120,
-                              child: Expanded(
-                                child: Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  children: [
-                                    Text(
-                                      ModCubit2.get(context).isArabic
-                                          ? 'العملات الرقمية'
-                                          : 'Currencies',
-                                      overflow: TextOverflow.ellipsis,
-                                      style: ModCubit.get(context).isDark
-                                          ? TextStyle(fontSize: 20)
-                                          : TextStyle(
-                                              fontSize: 20,
-                                              color: Colors.white),
-                                    ),
-                                  ],
-                                ),
+                              child: Column(
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Text(
+                                    ModCubit2.get(context).isArabic
+                                        ? 'العملات الرقمية'
+                                        : 'Currencies',
+                                    overflow: TextOverflow.ellipsis,
+                                    style: ModCubit.get(context).isDark
+                                        ? TextStyle(fontSize: 20)
+                                        : TextStyle(
+                                            fontSize: 20, color: Colors.white),
+                                  ),
+                                ],
                               ),
                             ),
                           )
