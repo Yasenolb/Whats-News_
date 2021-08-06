@@ -2,15 +2,17 @@
 
 Program to display local and international news in multiple languages.
 
-## Getting Started
+ 
+Features:
 
-This project is a starting point for a Flutter application.
+You can watch all kinds of news
+Political, sports.., local and international in Arabic and English, and follow-up on digital currency changes.
+Works on all platforms android,ios,web.
 
-A few resources to get you started if this is your first Flutter project:
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+View photos from within the app:
+![Whats News Images](https://user-images.githubusercontent.com/88506816/128529216-1f813c5f-1fb4-4570-8393-548de2ff7fce.gif)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Installation Instructions:
+You need to register in the program to monitor the latest newsز
+
