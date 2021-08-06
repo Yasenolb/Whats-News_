@@ -11,6 +11,7 @@ Works on all platforms android,ios,web.
 
 
 View photos from within the app:
+
 ![Whats News Images](https://user-images.githubusercontent.com/88506816/128529216-1f813c5f-1fb4-4570-8393-548de2ff7fce.gif)
 
 
