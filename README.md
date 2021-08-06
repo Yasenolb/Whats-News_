@@ -1,6 +1,6 @@
-# untitled6
+# Whats News
 
-A new Flutter project.
+Program to display local and international news in multiple languages.
 
 ## Getting Started
 
