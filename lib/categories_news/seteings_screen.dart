@@ -6,6 +6,7 @@ import 'package:untitled6/Bloc/cubite.dart';
 import 'package:untitled6/Dark_Mode/cubite_mode.dart';
 import 'package:untitled6/Home_layout.dart';
 import 'package:untitled6/shange_lang/lang_cubit.dart';
+import 'package:untitled6/sherd_page/page_cubit.dart';
 import 'package:untitled6/start_screens/sing_up_screen/sing_up_screen.dart';
 import 'package:untitled6/start_screens/welcome_screen/welcome-screen.dart';
 
@@ -210,6 +211,8 @@ class _SettingsState extends State<Settings> {
                                 setState(() {
                                   // ignore: unnecessary_statements
                                   cc != null;
+                                  // ignore: unnecessary_statements
+                                  ModCubit3.get(context).changPage();
                                 });
                               },
                               child: Text(ModCubit2.get(context).isArabic
